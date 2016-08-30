@@ -7,6 +7,6 @@ dependencies:
   post:
     - sudo cp ~/PHPLaravelSpike/apache_server_conf /etc/apache2/sites-available
     - sudo mv /etc/apache2/sites-available/apache_server_conf /etc/apache2/sites-available/apache_server_conf.conf
-    - a2ensite apache_server_conf.conf
+    - sudo a2ensite apache_server_conf.conf
     - sudo service apache2 restart
 
