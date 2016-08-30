@@ -1,3 +1,6 @@
 machine:
   php:
     version: 7.0.7
+
+environment:
+  APP_KEY: base64:t18mX4FRcnNhUvORCr8koX7a6tnRsIpiep39ddfDy9c=
