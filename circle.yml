@@ -1,3 +1,9 @@
+dependencies:
+  pre:
+    - sudo unlink /usr/lib/apache2/modules/libphp5.so
+    - sudo ln -s $PHPENV_ROOT/versions/7.0.07/usr/lib/apache2/modules/libphp7.so /usr/lib/apache2/modules/libphp5.so
+
+
 machine:
   php:
     version: 7.0.7
