@@ -1,3 +1,11 @@
 machine:
   php:
     version: 7.0.7
+
+
+dependencies:
+  post:
+    - cp ~/PHPLaravelSpike/apache_server_conf /etc/apache2/sites-available
+    - a2ensite apache_server_conf
+    - sudo service apache2 restart
+
