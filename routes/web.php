@@ -39,3 +39,4 @@
   Route::get('/cards', 'CardsController@index');
   Route::get('/cards/{id}', 'CardsController@show');
   Route::get('/home', 'HomeController@index');
+  Route::get('/perf_test', 'PagesController@performance');
