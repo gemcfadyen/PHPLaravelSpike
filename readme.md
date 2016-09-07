@@ -1,5 +1,7 @@
 # Laravel PHP Framework
 
+Deployed on heroku at: https://polar-waters-65745.herokuapp.com/
+
 ## Tech Requirements
 php 7.0
 Laravel 5.3
