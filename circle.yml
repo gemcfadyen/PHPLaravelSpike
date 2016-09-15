@@ -14,3 +14,9 @@ database:
   override:
     - php artisan migrate --force --env=production --no-interaction -vvv
     - php artisan db:seed --force --env=production --no-interaction -vvv
+
+test:
+  override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/phpunit
+    - mkdir -p $CIRCLE_TEST_REPORTS/phpunit/coverage
+    - phpunit --log-junit $CIRCLE_TEST_REPORTS/phpunit/junit.xml tests --coverage-html $CIRCLE_TEST_REPORTS/phpunit/coverage
