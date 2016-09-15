@@ -10,6 +10,14 @@ machine:
     DB_HOST: 127.0.0.1
     DB_DATABASE: circle_test
     DB_USERNAME: ubuntu
+dependencies:
+  override:
+    - sudo npm install
+    - sudo npm install -g webpack
+    - sudo npm install bible —save-dev
+    - sudo npm install vue-loader —save-dev
+    - sudo npm rebuild node-sass
+    - gulp
 database:
   override:
     - php artisan migrate --force --env=production --no-interaction -vvv
